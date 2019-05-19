@@ -1,0 +1,5 @@
+#!/bin/env sh
+# A small script that sets the wallpaper and
+# caches it for betterlockscreen
+
+[ -n "$1" ] && feh --bg-scale "$1" && betterlockscreen -u "$1"
